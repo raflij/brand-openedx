@@ -1,2 +1,24 @@
 // Use this file to define style overrides for @edx/paragon
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
+
+// HOT PINK BUTTON TEST - Make buttons very visible
+.btn-primary {
+  background-color: hotpink !important;
+  border-color: hotpink !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: deeppink !important;
+  border-color: deeppink !important;
+}
+
+.btn-secondary {
+  background-color: #FF69B4 !important;
+  border-color: #FF69B4 !important;
+}
+
+// Also make header elements more visible
+.navbar-brand {
+  background-color: rgba(255, 105, 180, 0.1) !important;
+}
