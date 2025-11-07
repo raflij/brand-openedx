@@ -1,2 +1,37 @@
-// Use this file to set SASS variables for @edx/paragon
-// See _variables.scss in https://github.com/openedx/paragon/blob/master/scss/core/ for reference
+/* ==== TEST THEME – VISIBLE IN ALL MFEs ==== */
+
+/* 1. Change the primary brand color (buttons, links, highlights) */
+$primary-base: #e63946 !important;   // Bright red – very noticeable
+$primary-100:  tint-color($primary-base, 80%);
+$primary-200:  tint-color($primary-base, 60%);
+$primary-300:  tint-color($primary-base, 40%);
+$primary-400:  tint-color($primary-base, 20%);
+$primary-500:  $primary-base;
+$primary-600:  shade-color($primary-base, 20%);
+$primary-700:  shade-color($primary-base, 40%);
+$primary-800:  shade-color($primary-base, 60%);
+$primary-900:  shade-color($primary-base, 80%);
+
+/* 2. Change the background of the top navbar */
+$navbar-bg: #1d3557 !important;      // Dark blue
+
+/* 3. Change link hover color */
+$link-hover-color: #f1faee !important;  // Light mint
+
+/* 4. Force a custom font just for fun */
+$font-family-base: "Comic Sans MS", cursive, sans-serif !important;
+
+/* 5. Add a flashy border to every card (Paragon cards) */
+$card-border-color: #a8dadc !important;
+$card-border-width: 4px !important;
+$card-border-radius: 12px !important;
+
+/* 6. Override Paragon’s primary button style */
+.btn-primary {
+  background-color: $primary-base !important;
+  border-color: $primary-base !important;
+  &:hover {
+    background-color: $primary-700 !important;
+    border-color: $primary-700 !important;
+  }
+}
